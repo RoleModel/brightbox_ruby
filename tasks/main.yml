@@ -23,5 +23,5 @@
 
 - name: install default gems
   command: gem install {{item}} --no-document
-  with_items: brightbox_ruby_default_gems
+  with_items: "{{brightbox_ruby_default_gems}}"
   become: yes
