@@ -2,7 +2,7 @@
 - name: ppa dependencies
   apt: name={{item}} update_cache=yes cache_valid_time=300
   with_items:
-    - python-software-properties
+    - software-properties-common
   become: yes
 
 - name: brightbox ruby repo
